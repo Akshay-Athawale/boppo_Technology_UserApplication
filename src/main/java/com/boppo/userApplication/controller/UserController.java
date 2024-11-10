@@ -49,7 +49,7 @@ public class UserController {
 			return new ResponseEntity<Boolean>(HttpStatus.ACCEPTED);
 		}
 		logger.info(String.format(CommonConstant.RESPONSE, userExist));
-		return new ResponseEntity<Boolean>(HttpStatus.NOT_ACCEPTABLE);
+		return new ResponseEntity<Boolean>(HttpStatus.SERVICE_UNAVAILABLE);
 	}
 
 	@GetMapping("get/pagination/{offSet}/{pageSize}")

@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
 				flag = true;
 			} else {
 				logger.info("Exit :: Inside UserServiceImpl :: isUserExist():");
-				throw new RuntimeException("Wrong Pass");
+				throw new RuntimeException("Wrong Password");
 			}
 		} else {
 			logger.info("Exit :: Inside UserServiceImpl :: isUserExist():");
